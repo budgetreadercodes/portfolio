@@ -25,17 +25,17 @@ jobs:
       TZ: Asia/Kolkata
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.1
         with:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v6.1.0
         with:
           go-version: ${{ env.GO_VERSION }}
           cache: false
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v6.1.0
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Setup Pages
